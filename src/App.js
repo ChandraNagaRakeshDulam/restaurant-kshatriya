@@ -5,7 +5,7 @@ import LoginPage from "./LoginPage.js";
 function App() {
   return (
     <div className="App">
-      <LoginPage />
+      <LoginPage/>
     </div>
   );
 }
