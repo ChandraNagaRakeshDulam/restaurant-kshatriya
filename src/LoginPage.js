@@ -9,7 +9,7 @@ const LoginPage = () => {
 
       {/* Logo */}
       <div className="logo">
-        <img src="/logo.png" alt="Restaurant Logo" />
+        <img src="logo.png" alt="Restaurant Logo" />
       </div>
 
       {/* Login Form */}
@@ -22,36 +22,46 @@ const LoginPage = () => {
         </form>
       </div>
 
-      {/* Flyer for Promotions */}
-      <div className="flyer-container">
-        <img src="/flyer.jpg" alt="Flyer" />
-      </div>
-
       {/* Scroll Section */}
       <div className="scroll-section">
+        {/* Candlelight Dinner Section */}
         <div className="promotion candlelight">
           <div className="content">
             {/* Text on the left */}
             <div className="text-content">
               <h2>Candlelight Dinner</h2>
               <p>
-                Indulge in a romantic candlelight dinner with a stunning ambiance and
-                fine dining. Enjoy an intimate evening with gourmet dishes, perfect
-                for special occasions.
+                Immerse yourself in an elegant, romantic experience with our Candlelight Dinner. Perfect for anniversaries, proposals, or simply celebrating love with exquisite dishes and intimate ambiance.
               </p>
+              <button className="cta-button">Reserve a Table</button>
             </div>
 
             {/* Images on the right */}
             <div className="image-content">
-              <img src="/cld_1.jpg" alt="Candlelight Dinner 1" />
-              <img src="/cld_2.jpg" alt="Candlelight Dinner 2" />
+              <img src="cld_1.jpg" alt="Candlelight Dinner 1" />
+              <img src="cld_2.jpg" alt="Candlelight Dinner 2" />
             </div>
           </div>
         </div>
 
+        {/* Banquet Hall Section */}
         <div className="promotion banquet">
-          <h2>Banquet Hall</h2>
-          <p>Book our spacious banquet hall for your events and functions.</p>
+          <div className="content">
+            {/* Images on the left */}
+            <div className="image-content">
+              <img src="bqhall_1.jpg" alt="Banquet Hall 1" />
+              <img src="bqhall_2.jpg" alt="Banquet Hall 2" />
+            </div>
+
+            {/* Text on the right */}
+            <div className="text-content">
+              <h2>Banquet Hall</h2>
+              <p>
+                Host your special events in our luxurious banquet hall, perfect for weddings, corporate events, and grand celebrations. Enjoy high-end catering and exceptional service in an unforgettable setting.
+              </p>
+              <button className="cta-button">Book the Hall</button>
+            </div>
+          </div>
         </div>
       </div>
 
