@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/restaurant-kshatriya/static/css/main.fc866232.css",
-    "main.js": "/restaurant-kshatriya/static/js/main.2bf564e7.js",
+    "main.css": "/restaurant-kshatriya/static/css/main.27aeb1db.css",
+    "main.js": "/restaurant-kshatriya/static/js/main.c22b0d9d.js",
     "static/js/453.eb154692.chunk.js": "/restaurant-kshatriya/static/js/453.eb154692.chunk.js",
     "static/media/bg.jpg": "/restaurant-kshatriya/static/media/bg.7c33c144a9197b9b01ec.jpg",
     "index.html": "/restaurant-kshatriya/index.html",
-    "main.fc866232.css.map": "/restaurant-kshatriya/static/css/main.fc866232.css.map",
-    "main.2bf564e7.js.map": "/restaurant-kshatriya/static/js/main.2bf564e7.js.map",
+    "main.27aeb1db.css.map": "/restaurant-kshatriya/static/css/main.27aeb1db.css.map",
+    "main.c22b0d9d.js.map": "/restaurant-kshatriya/static/js/main.c22b0d9d.js.map",
     "453.eb154692.chunk.js.map": "/restaurant-kshatriya/static/js/453.eb154692.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fc866232.css",
-    "static/js/main.2bf564e7.js"
+    "static/css/main.27aeb1db.css",
+    "static/js/main.c22b0d9d.js"
   ]
 }
