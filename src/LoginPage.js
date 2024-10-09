@@ -9,7 +9,7 @@ const LoginPage = () => {
 
       {/* Logo */}
       <div className="logo">
-        <img src="logo.png" alt="Restaurant Logo" />
+        <img src="/logo.png" alt="Restaurant Logo" />
       </div>
 
       {/* Login Form */}
@@ -24,14 +24,29 @@ const LoginPage = () => {
 
       {/* Flyer for Promotions */}
       <div className="flyer-container">
-        <img src="flyer.jpg" alt="Flyer" />
+        <img src="/flyer.jpg" alt="Flyer" />
       </div>
 
       {/* Scroll Section */}
       <div className="scroll-section">
         <div className="promotion candlelight">
-          <h2>Candlelight Dinner</h2>
-          <p>Enjoy a romantic evening with us!</p>
+          <div className="content">
+            {/* Text on the left */}
+            <div className="text-content">
+              <h2>Candlelight Dinner</h2>
+              <p>
+                Indulge in a romantic candlelight dinner with a stunning ambiance and
+                fine dining. Enjoy an intimate evening with gourmet dishes, perfect
+                for special occasions.
+              </p>
+            </div>
+
+            {/* Images on the right */}
+            <div className="image-content">
+              <img src="/cld_1.jpg" alt="Candlelight Dinner 1" />
+              <img src="/cld_2.jpg" alt="Candlelight Dinner 2" />
+            </div>
+          </div>
         </div>
 
         <div className="promotion banquet">
