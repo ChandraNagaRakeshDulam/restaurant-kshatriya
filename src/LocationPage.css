@@ -1,0 +1,79 @@
+/* Location Page Styles */
+.location-page {
+    text-align: center;
+    padding: 50px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .location-page h1 {
+    font-size: 3rem;
+    color: #ff4d4d;
+    margin-bottom: 40px;
+  }
+  
+  .locations-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  /* Each Location Tile */
+  .location-tile {
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 30%;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+  }
+  
+  .location-tile:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .location-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 2px solid #ff4d4d;
+  }
+  
+  .location-details {
+    padding: 20px;
+  }
+  
+  .location-details h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .location-details p {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  .location-details a {
+    color: #ff4d4d;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .location-details a:hover {
+    color: #ff1a1a;
+  }
+  
+  /* Responsive Design for Mobile Screens */
+  @media (max-width: 768px) {
+    .locations-container {
+      flex-direction: column;
+    }
+  
+    .location-tile {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  

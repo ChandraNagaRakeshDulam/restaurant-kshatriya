@@ -1,15 +1,32 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./LoginPage.css";
 
 const LoginPage = () => {
   return (
     <div className="login-page">
+      {/* Navbar */}
+      <nav className="navbar">
+        <div className="navbar-container">
+          <div className="navbar-logo">
+            <img src={`${process.env.PUBLIC_URL}/logo.png`} alt="Restaurant Logo" />
+          </div>
+          <ul className="navbar-links">
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/menu">Menu</Link></li>
+            <li><Link to="/location">Location</Link></li> 
+            <li><Link to="/about">About</Link></li>
+            <li><Link to="/contact">Contact</Link></li>
+          </ul>
+        </div>
+      </nav>
+
       {/* Blurred Background */}
       <div className="background-image" />
 
       {/* Logo */}
       <div className="logo">
-        <img src="logo.png" alt="Restaurant Logo" />
+        <img src={`${process.env.PUBLIC_URL}/logo.png`} alt="Restaurant Logo" />
       </div>
 
       {/* Login Form */}
@@ -27,7 +44,6 @@ const LoginPage = () => {
         {/* Candlelight Dinner Section */}
         <div className="promotion candlelight">
           <div className="content">
-            {/* Text on the left */}
             <div className="text-content">
               <h2>Candlelight Dinner</h2>
               <p>
@@ -35,11 +51,9 @@ const LoginPage = () => {
               </p>
               <button className="cta-button">Reserve a Table</button>
             </div>
-
-            {/* Images on the right */}
             <div className="image-content">
-              <img src="cld_1.jpg" alt="Candlelight Dinner 1" />
-              <img src="cld_2.jpg" alt="Candlelight Dinner 2" />
+              <img src={`${process.env.PUBLIC_URL}/cld_1.jpg`} alt="Candlelight Dinner 1" />
+              <img src={`${process.env.PUBLIC_URL}/cld_2.jpg`} alt="Candlelight Dinner 2" />
             </div>
           </div>
         </div>
@@ -47,13 +61,10 @@ const LoginPage = () => {
         {/* Banquet Hall Section */}
         <div className="promotion banquet">
           <div className="content">
-            {/* Images on the left */}
             <div className="image-content">
-              <img src="bqhall_1.jpg" alt="Banquet Hall 1" />
-              <img src="bqhall_2.jpg" alt="Banquet Hall 2" />
+              <img src={`${process.env.PUBLIC_URL}/bqhall_1.jpg`} alt="Banquet Hall 1" />
+              <img src={`${process.env.PUBLIC_URL}/bqhall_2.jpg`} alt="Banquet Hall 2" />
             </div>
-
-            {/* Text on the right */}
             <div className="text-content">
               <h2>Banquet Hall</h2>
               <p>

@@ -1,3 +1,57 @@
+/* Navbar */
+.navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 0px;
+  padding-left: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-right: 35px;
+}
+
+.navbar-logo img {
+  width: 50px;
+  height: auto;
+}
+
+.navbar-links {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+}
+
+.navbar-links li {
+  margin-left: 30px;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar-links li a:hover {
+  color: #ff4d4d;
+}
+
+/* Ensure that the rest of the layout is adjusted for the fixed navbar */
+body {
+  padding-top: 70px;
+}
+
 /* Blurred background */
 .background-image {
   position: fixed;
@@ -84,7 +138,7 @@
   max-width: 1000px;
   margin: 30px auto;
   overflow: hidden;
-  background-color: transparent; /* Removed the background */
+  background-color: transparent;
 }
 
 .promotion:hover {
@@ -221,4 +275,44 @@
 
 .footer .social-media a:hover {
   color: #ff4d4d;
+}
+
+/* Responsive Design for Mobile Screens */
+@media (max-width: 768px) {
+  .navbar-links {
+    flex-direction: column;
+    display: none; /* Hide menu for mobile initially */
+  }
+
+  .navbar-links li {
+    margin: 10px 0;
+  }
+
+  .promotion {
+    flex-direction: column; /* Stack elements vertically on mobile */
+  }
+
+  .promotion .text-content,
+  .promotion .image-content {
+    width: 100%;
+    text-align: center;
+  }
+
+  .promotion .text-content {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .promotion .image-content {
+    margin-bottom: 20px;
+  }
+
+  .cta-button {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .login-container {
+    width: 90%; /* Full width for mobile */
+  }
 }
