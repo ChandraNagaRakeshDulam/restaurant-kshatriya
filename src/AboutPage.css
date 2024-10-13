@@ -1,0 +1,91 @@
+.about-page {
+    text-align: center;
+    padding: 50px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+  }
+  
+  .about-page h1 {
+    font-size: 3rem;
+    color: #ff4d4d;
+    margin-bottom: 40px;
+  }
+  
+  .about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .about-text {
+    width: 50%;
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .about-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .about-text p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.8;
+  }
+  
+  .about-image {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .about-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .signature-dishes {
+    margin-top: 50px;
+  }
+  
+  .signature-dishes h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ff4d4d;
+  }
+  
+  .signature-dishes ul {
+    list-style-type: none;
+    font-size: 1.5rem;
+    padding: 0;
+  }
+  
+  .signature-dishes ul li {
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  .signature-dishes ul li:before {
+    content: "🍽️ "; /* Adds a food plate icon before each dish */
+  }
+  
+  @media (max-width: 768px) {
+    .about-section {
+      flex-direction: column;
+    }
+  
+    .about-text, .about-image {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .about-text {
+      padding: 0;
+    }
+  }
+  

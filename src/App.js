@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import LoginPage from "./LoginPage";
 import LocationPage from "./LocationPage"; 
+import AboutPage from "./AboutPage";
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
               <li><a href="/menu">Menu</a></li>
               <li><a href="/location">Location</a></li> 
               <li><a href="/about">About</a></li>
-              <li><a href="/contact">Contact</a></li>
+              {/* <li><a href="/contact">Contact</a></li> */}
             </ul>
           </div>
         </nav>
@@ -26,7 +27,8 @@ function App() {
         {/* Define Routes */}
         <Routes>
           <Route path="/" element={<LoginPage />} />
-          <Route path="/location" element={<LocationPage />} /> 
+          <Route path="/location" element={<LocationPage />} />
+          <Route path="/about" element={<AboutPage />} /> 
         </Routes>
       </div>
     </Router>

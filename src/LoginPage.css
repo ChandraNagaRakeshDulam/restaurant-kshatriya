@@ -1,9 +1,12 @@
-/* Navbar */
+* {
+  box-sizing: border-box;
+}
+
 .navbar {
   position: absolute;
   top: 0;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.9);
   padding: 0px;
   padding-left: 15px;
   display: flex;
@@ -256,7 +259,7 @@ body {
 
 /* Footer */
 .footer {
-  background-color: #333;
+  background-color: #000000;
   color: white;
   padding: 20px;
   text-align: center;
@@ -313,6 +316,6 @@ body {
   }
 
   .login-container {
-    width: 90%; /* Full width for mobile */
+    width: 90%; 
   }
 }

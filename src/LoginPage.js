@@ -16,20 +16,17 @@ const LoginPage = () => {
             <li><Link to="/menu">Menu</Link></li>
             <li><Link to="/location">Location</Link></li> 
             <li><Link to="/about">About</Link></li>
-            <li><Link to="/contact">Contact</Link></li>
+            {/* <li><Link to="/contact">Contact</Link></li> */}
           </ul>
         </div>
       </nav>
 
-      {/* Blurred Background */}
       <div className="background-image" />
 
-      {/* Logo */}
       <div className="logo">
         <img src={`${process.env.PUBLIC_URL}/logo.png`} alt="Restaurant Logo" />
       </div>
 
-      {/* Login Form */}
       <div className="login-container">
         <h1>Login</h1>
         <form>

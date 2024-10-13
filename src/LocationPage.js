@@ -31,6 +31,7 @@ const LocationPage = () => {
 
   return (
     <div className="location-page">
+      <div className="background-image" />
       <h1>Our Locations</h1>
       <div className="locations-container">
         {branches.map((branch, index) => (
