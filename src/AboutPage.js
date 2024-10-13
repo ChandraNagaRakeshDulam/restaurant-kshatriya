@@ -16,7 +16,7 @@ const AboutPage = () => {
             Established in 1960, our restaurant has been serving authentic and delicious food for over 60 years. Our founders had a vision to bring the rich flavors of South Indian cuisine, particularly Telugu food, to the world. Over the decades, we have grown from a small family-owned restaurant to a beloved dining destination.
           </p>
           <p>
-            Our signature dishes include the world-famous Hyderabadi Biryani, a dish known for its aromatic spices and flavorful rice. We also specialize in a variety of traditional South Indian dishes such as dosa, idli, sambar, and vada, all made with love and fresh ingredients.
+            Our signature dishes include the world-famous Hyderabadi Dum Biryani, a dish known for its aromatic spices and flavorful rice. We also specialize in a variety of traditional South Indian dishes such as dosa, idli, sambar, and vada, all made with love and fresh ingredients.
           </p>
         </div>
 
