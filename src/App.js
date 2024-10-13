@@ -6,7 +6,7 @@ import AboutPage from "./AboutPage";
 
 function App() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <div className="App">
         {/* Navbar remains available across all pages */}
         <nav className="navbar">
