@@ -14,7 +14,7 @@ body {
 }
 
 .logo img {
-  width: 150px;
+  width: 300px;
   height: auto;
 }
 
@@ -63,6 +63,22 @@ body {
 
 .navbar-links li a:hover {
   color: #ff4d4d;
+}
+
+/* Hamburger Menu for Mobile */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.hamburger .line {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+  transition: 0.3s;
 }
 
 /* Blurred background */
@@ -185,7 +201,7 @@ body {
 .promotion.candlelight .text-content p,
 .promotion.banquet .text-content p {
   font-size: 1.2rem;
-  color: #333;
+  color: #ffffff;
   margin-bottom: 20px;
 }
 
@@ -255,7 +271,6 @@ body {
   min-width: calc(50% - 20px); 
   max-width: calc(50% - 20px); 
   height: 180px; 
-  background-color: #ff4d4d;
   color: white;
   border-radius: 15px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
@@ -343,6 +358,17 @@ body {
   .navbar-links {
     flex-direction: column;
     display: none; /* Hide menu for mobile initially */
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    text-align: center;
+    z-index: 999;
+  }
+
+  .navbar-links.active {
+    display: flex; /* Show menu when active */
   }
 
   .navbar-links li {
@@ -377,5 +403,9 @@ body {
     min-width: 90%;
     max-width: 90%;
     margin: 0 auto;
+  }
+
+  .hamburger {
+    display: flex; /* Show hamburger menu on mobile */
   }
 }

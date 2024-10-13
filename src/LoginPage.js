@@ -1,11 +1,10 @@
 import React from "react";
-import { useNavigate } from "react-router-dom"; // Import useNavigate hook for redirection
+import { useNavigate } from "react-router-dom";
 import "./LoginPage.css";
 
 const LoginPage = () => {
-  const navigate = useNavigate(); // Initialize navigate hook
+  const navigate = useNavigate(); 
 
-  // Function to handle redirection to the location page
   const goToLocationPage = () => {
     navigate("/location");
   };
@@ -15,7 +14,7 @@ const LoginPage = () => {
       <div className="background-image" />
 
       <div className="logo">
-        <img src={`${process.env.PUBLIC_URL}/logo.png`} alt="Restaurant Logo" />
+        <img src={`${process.env.PUBLIC_URL}/logo1.jpg`} alt="Restaurant Logo" />
       </div>
 
       {/* Scroll Section for Restaurant Images */}
