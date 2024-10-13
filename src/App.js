@@ -8,7 +8,6 @@ function App() {
   return (
     <Router basename={process.env.PUBLIC_URL}>
       <div className="App">
-        {/* Navbar remains available across all pages */}
         <nav className="navbar">
           <div className="navbar-container">
             <div className="navbar-logo">
@@ -19,12 +18,10 @@ function App() {
               <li><a href="/menu">Menu</a></li>
               <li><a href="/location">Location</a></li> 
               <li><a href="/about">About</a></li>
-              {/* <li><a href="/contact">Contact</a></li> */}
             </ul>
           </div>
         </nav>
 
-        {/* Define Routes */}
         <Routes>
           <Route path="/" element={<LoginPage />} />
           <Route path="/location" element={<LocationPage />} />
