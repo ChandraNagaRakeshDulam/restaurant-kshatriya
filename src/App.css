@@ -1,4 +1,7 @@
-/* App.css */
+* {
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
 }
@@ -15,7 +18,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #000000;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -39,7 +42,7 @@
 }
 
 .navbar {
-  background-color: #282c34;
+  background-color: #000000;
   padding: 15px 30px;
   position: fixed;
   top: 0;
@@ -71,5 +74,5 @@
 }
 
 main {
-  padding-top: 70px; /* To prevent content being hidden behind the navbar */
+  padding-top: 70px; 
 }
