@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/restaurant-kshatriya/static/css/main.de97a50e.css",
-    "main.js": "/restaurant-kshatriya/static/js/main.0e10e2fa.js",
+    "main.css": "/restaurant-kshatriya/static/css/main.18b27414.css",
+    "main.js": "/restaurant-kshatriya/static/js/main.041fd5a1.js",
     "static/js/453.eb154692.chunk.js": "/restaurant-kshatriya/static/js/453.eb154692.chunk.js",
     "static/media/bg.jpg": "/restaurant-kshatriya/static/media/bg.7c33c144a9197b9b01ec.jpg",
     "index.html": "/restaurant-kshatriya/index.html",
-    "main.de97a50e.css.map": "/restaurant-kshatriya/static/css/main.de97a50e.css.map",
-    "main.0e10e2fa.js.map": "/restaurant-kshatriya/static/js/main.0e10e2fa.js.map",
+    "main.18b27414.css.map": "/restaurant-kshatriya/static/css/main.18b27414.css.map",
+    "main.041fd5a1.js.map": "/restaurant-kshatriya/static/js/main.041fd5a1.js.map",
     "453.eb154692.chunk.js.map": "/restaurant-kshatriya/static/js/453.eb154692.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.de97a50e.css",
-    "static/js/main.0e10e2fa.js"
+    "static/css/main.18b27414.css",
+    "static/js/main.041fd5a1.js"
   ]
 }
