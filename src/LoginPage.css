@@ -2,13 +2,29 @@
   box-sizing: border-box;
 }
 
+body {
+  padding-top: 70px; 
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.logo {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.logo img {
+  width: 150px;
+  height: auto;
+}
+
+/* Navbar */
 .navbar {
-  position: absolute;
+  position: fixed;
   top: 0;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.9);
-  padding: 0px;
-  padding-left: 15px;
+  padding: 0 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -43,16 +59,10 @@
   color: white;
   font-size: 1.1rem;
   transition: color 0.3s ease;
-  font-family: 'Poppins', sans-serif;
 }
 
 .navbar-links li a:hover {
   color: #ff4d4d;
-}
-
-/* Ensure that the rest of the layout is adjusted for the fixed navbar */
-body {
-  padding-top: 70px;
 }
 
 /* Blurred background */
@@ -64,62 +74,8 @@ body {
   height: 100%;
   background-image: url('bg.jpg');
   background-size: cover;
-  filter: blur(8px);
+  filter: blur(8px) brightness(0.5); /* Reduce brightness */
   z-index: -1;
-}
-
-/* Logo */
-.logo {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.logo img {
-  width: 150px;
-  height: auto;
-}
-
-/* Login container */
-.login-container {
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 30px;
-  border-radius: 15px;
-  width: 400px;
-  margin: 50px auto;
-  text-align: center;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
-
-.login-container h1 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-  font-family: 'Poppins', sans-serif;
-  color: #333;
-}
-
-.login-container form input {
-  width: 90%;
-  padding: 15px;
-  margin: 10px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  font-size: 1.1rem;
-}
-
-.login-container form button {
-  width: 90%;
-  padding: 15px;
-  background: linear-gradient(135deg, #ff6b6b, #ff4d4d);
-  color: white;
-  border: none;
-  border-radius: 8px;
-  font-size: 1.2rem;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.login-container form button:hover {
-  background: linear-gradient(135deg, #ff4d4d, #ff1a1a);
 }
 
 /* Scroll section */
@@ -128,7 +84,62 @@ body {
   text-align: center;
 }
 
-/* Promotion Section Styles - Transparent Background */
+.scroll-section h2 {
+  font-size: 2.5rem;
+  color: #ff4d4d;
+  margin-bottom: 30px;
+}
+
+/* Restaurant Images Scroll Section */
+.restaurant-images {
+  overflow: hidden; /* Ensure no overflow outside the container */
+}
+
+.restaurant-images .image-wrapper {
+  display: flex;
+  justify-content: center;
+  animation: scrollRightToLeft 20s linear infinite; /* Continuous right-to-left scrolling */
+}
+
+.restaurant-images img {
+  width: 300px;
+  height: 200px;
+  margin: 0 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Signature Dishes Scroll Section */
+.signature-dishes-section {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.signature-dishes-section h2 {
+  font-size: 2.5rem;
+  color: #ff4d4d;
+  margin-bottom: 30px;
+}
+
+.dish-images {
+  overflow: hidden; /* Ensure no overflow outside the container */
+}
+
+.dish-images .image-wrapper {
+  display: flex;
+  justify-content: center;
+  animation: scrollLeftToRight 20s linear infinite; /* Continuous left-to-right scrolling */
+}
+
+.dish-images img {
+  width: 250px;
+  height: 180px;
+  margin: 0 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Promotion Section - Transparent Background */
 .promotion {
   margin: 30px 0;
   padding: 30px;
@@ -150,78 +161,35 @@ body {
 }
 
 /* Candlelight Dinner Section - Text on Left, Images on Right */
-.promotion.candlelight .content {
+.promotion.candlelight .content,
+.promotion.banquet .content {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.promotion.candlelight .text-content {
+.promotion.candlelight .text-content,
+.promotion.banquet .text-content {
   width: 45%;
   padding-right: 20px;
   text-align: left;
 }
 
-.promotion.candlelight .text-content h2 {
-  font-size: 2.5rem;
-  margin-bottom: 15px;
-  color: #ff4d4d;
-  font-family: 'Poppins', sans-serif;
-}
-
-.promotion.candlelight .text-content p {
-  font-size: 1.2rem;
-  color: #333;
-  margin-bottom: 20px;
-  font-family: 'Poppins', sans-serif;
-}
-
-.promotion.candlelight .image-content {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  width: 45%;
-}
-
-.promotion.candlelight .image-content img {
-  width: 100%;
-  border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-}
-
-.promotion.candlelight .image-content img:hover {
-  transform: scale(1.05);
-}
-
-/* Banquet Hall Section - Reverse Layout (Images Left, Text Right) */
-.promotion.banquet .content {
-  display: flex;
-  flex-direction: left;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.promotion.banquet .text-content {
-  width: 45%;
-  padding-left: 20px;
-  text-align: right;
-}
-
+.promotion.candlelight .text-content h2,
 .promotion.banquet .text-content h2 {
   font-size: 2.5rem;
   margin-bottom: 15px;
   color: #ff4d4d;
-  font-family: 'Poppins', sans-serif;
 }
 
+.promotion.candlelight .text-content p,
 .promotion.banquet .text-content p {
   font-size: 1.2rem;
   color: #333;
   margin-bottom: 20px;
-  font-family: 'Poppins', sans-serif;
 }
 
+.promotion.candlelight .image-content,
 .promotion.banquet .image-content {
   display: flex;
   flex-direction: column;
@@ -229,6 +197,7 @@ body {
   width: 45%;
 }
 
+.promotion.candlelight .image-content img,
 .promotion.banquet .image-content img {
   width: 100%;
   border-radius: 15px;
@@ -236,6 +205,7 @@ body {
   transition: transform 0.3s ease;
 }
 
+.promotion.candlelight .image-content img:hover,
 .promotion.banquet .image-content img:hover {
   transform: scale(1.05);
 }
@@ -250,11 +220,99 @@ body {
   border: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  font-family: 'Poppins', sans-serif;
 }
 
 .cta-button:hover {
   background-color: #ff1a1a;
+}
+
+/* Reviews Section */
+.reviews-section {
+  margin-top: 50px;
+  padding: 30px;
+  border-radius: 15px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden; 
+}
+
+.reviews-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #ff4d4d;
+  text-align: center;
+}
+
+/* Container for Review Cards */
+.review-cards-container {
+  display: flex;
+  animation: scrollReviews 25s linear infinite; 
+}
+
+.review-card {
+  min-width: calc(50% - 20px); 
+  max-width: calc(50% - 20px); 
+  height: 180px; 
+  background-color: #ff4d4d;
+  color: white;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  margin-right: 20px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden; 
+  word-wrap: break-word; 
+  text-overflow: ellipsis; 
+}
+
+.review-card p {
+  font-size: 1rem;
+  font-style: italic;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  max-height: 90px; 
+  overflow: hidden; 
+  text-overflow: ellipsis;
+}
+
+.review-card span {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #f1f1f1;
+  margin-top: 5px;
+}
+
+/* Keyframes for continuous right-to-left scrolling */
+@keyframes scrollReviews {
+  0% {
+    transform: translateX(100%); 
+  }
+  100% {
+    transform: translateX(-100%); 
+  }
+}
+
+/* Keyframes for continuous right-to-left and left-to-right scrolling */
+@keyframes scrollRightToLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes scrollLeftToRight {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
 }
 
 /* Footer */
@@ -315,7 +373,9 @@ body {
     font-size: 1rem;
   }
 
-  .login-container {
-    width: 90%; 
+  .review-card {
+    min-width: 90%;
+    max-width: 90%;
+    margin: 0 auto;
   }
 }

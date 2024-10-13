@@ -4,7 +4,7 @@ import "./LocationPage.css";
 const LocationPage = () => {
   const branches = [
     {
-      city: "New York",
+      city: "Hyderabad",
       address: "123 Manhattan St, New York, NY 10001",
       googleMapsLink: "https://goo.gl/maps/xyz123",
       phone: "+1 (212) 555-1234",
@@ -12,7 +12,7 @@ const LocationPage = () => {
       image: `${process.env.PUBLIC_URL}/hyd.jpg`,
     },
     {
-      city: "Los Angeles",
+      city: "Rajahmundry",
       address: "456 Hollywood Blvd, Los Angeles, CA 90028",
       googleMapsLink: "https://goo.gl/maps/xyz456",
       phone: "+1 (310) 555-5678",
@@ -20,7 +20,7 @@ const LocationPage = () => {
       image: `${process.env.PUBLIC_URL}/rjy.jpeg`,
     },
     {
-      city: "Chicago",
+      city: "Kakinada",
       address: "789 Lakeshore Dr, Chicago, IL 60611",
       googleMapsLink: "https://goo.gl/maps/xyz789",
       phone: "+1 (312) 555-9876",
