@@ -32,25 +32,25 @@ const LocationPage = () => {
   return (
     <div className="location-page">
       <div className="background-image" />
-      <h1>Our Locations</h1>
-      <div className="locations-container">
-        {branches.map((branch, index) => (
-          <div key={index} className="location-tile">
-            <img src={branch.image} alt={`${branch.city} Branch`} className="location-image" />
-            <div className="location-details">
-              <h2>{branch.city}</h2>
-              <p>{branch.address}</p>
-              <p>
-                <a href={branch.googleMapsLink} target="_blank" rel="noopener noreferrer">
-                  View on Google Maps
-                </a>
-              </p>
-              <p>Phone: {branch.phone}</p>
-              <p>Email: <a href={`mailto:${branch.email}`}>{branch.email}</a></p>
+        <h1>Our Locations</h1>
+        <div className="locations-container">
+          {branches.map((branch, index) => (
+            <div key={index} className="location-tile">
+              <img src={branch.image} alt={`${branch.city} Branch`} className="location-image" />
+              <div className="location-details">
+                <h2>{branch.city}</h2>
+                <p>{branch.address}</p>
+                <p>
+                  <a href={branch.googleMapsLink} target="_blank" rel="noopener noreferrer">
+                    View on Google Maps
+                  </a>
+                </p>
+                <p>Phone: {branch.phone}</p>
+                <p>Email: <a href={`mailto:${branch.email}`}>{branch.email}</a></p>
+              </div>
             </div>
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
     </div>
   );
 };
